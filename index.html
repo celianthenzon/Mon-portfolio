@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Nzon Célianthe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <canvas id="particles"></canvas>
+
+ 
+  <header class="header" id="header">
+    <a href="#home" class="logo">Port<span>folio</span></a>
+    <nav class="navbar">
+      <a href="#home" class="active">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <p class="greeting">✨ Hello, tout le monde !</p>
+      <h2>Je suis </h2>
+      <h1>
+        <span class="name-highlight">NZON Célianthe<br>Bernadette Evelyne</span>
+      </h1>
+      <p class="role">
+        <span class="typed-text" id="typed"></span>
+        <span class="cursor-blink"></span>
+      </p>
+      <p class="bio">
+        Étudiante en niveau 1 à l'IUT de Douala et future développeuse &amp; conceptrice d'applications,
+        je combine des compétences techniques en développement web et Python avec une expertise
+        naissante en UX/UI design. 🌟
+      </p>
+      <div class="tags">
+        <span class="tag">🎥 Vidéo</span>
+        <span class="tag">✈️ Voyage</span>
+        <span class="tag">💻 Tech</span>
+        <span class="tag">🎙️ Podcast</span>
+        <span class="tag">📸 Photo</span>
+      </div>
+      <div class="home-actions">
+        <a href="#portfolio" class="btn-box">
+          <i class="fa-solid fa-eye"></i> Voir mes projets
+        </a>
+        <a href="#contact" class="btn-outline">
+          <i class="fa-solid fa-paper-plane"></i> Me contacter
+        </a>
+      </div>
+      <div class="home-sci">
+        <a href="#" title="GitHub"    style="--i:1"><i class="fa-brands fa-github"></i></a>
+        <a href="#" title="LinkedIn"  style="--i:2"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" title="Twitter"   style="--i:3"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" title="Instagram" style="--i:4"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+   
+    <div class="home-img">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          
+          <img src="image/bby girl.jpg" alt="Nzon Célianthe" />
+            <i class="fa-solid fa-camera"></i>
+           
+           
+        </div>
+      </div>
+      <div class="avatar-dots"></div>
+      <div class="avatar-glow"></div>
+    </div>
+  </section>
+
+  
+  <section class="about" id="about">
+    <h2 class="section-title">À <span>propos</span></h2>
+    <div class="section-line"></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Je suis <strong>NZON Célianthe Bernadette Evelyne</strong>, une étudiante passionnée
+        par la technologie et le design, actuellement en première année à l'IUT de Douala.</p>
+        <p>Mon parcours mêle curiosité, créativité et rigueur. Je m'intéresse particulièrement
+        au développement web (HTML, CSS, JavaScript, Python) ainsi qu'à l'UX/UI design —
+        créer des interfaces belles <em>et</em> intuitives est ma vraie motivation.</p>
+        <p>En dehors du code, j'aime explorer le monde à travers les voyages, la photo
+        et les podcasts tech. Chaque expérience nourrit ma créativité.</p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="num" data-target="5">0</div>
+            <p>Projets réalisés</p>
+          </div>
+          <div class="stat-card">
+            <div class="num" data-target="3">0</div>
+            <p>Langages maîtrisés</p>
+          </div>
+          <div class="stat-card">
+            <div class="num" data-target="1">0</div>
+            <p>Année d'études</p>
+          </div>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <label><span>HTML / CSS</span><span>88%</span></label>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <label><span>JavaScript</span><span>57%</span></label>
+          <div class="skill-bar"><div class="skill-fill" data-width="57"></div></div>
+        </div>
+        <div class="skill-item">
+          <label><span>Python</span><span>35%</span></label>
+          <div class="skill-bar"><div class="skill-fill" data-width="35"></div></div>
+        </div>
+        <div class="skill-item">
+          <label><span>UX / UI Design</span><span>60%</span></label>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <label><span>Figma</span><span>55%</span></label>
+          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2 class="section-title">Mes <span>projets</span></h2>
+    <div class="section-line"></div>
+    <div class="portfolio-grid">
+
+      <div class="project-card">
+        <div class="project-icon" style="background:rgba(0,238,255,0.1);">🌐</div>
+        <h3>Site Vitrine Personnel</h3>
+        <p>Portfolio responsive avec animations CSS et design moderne.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon" style="background:rgba(167,139,250,0.1);">❕</div>
+        <h3>Calculateur de factoriel</h3>
+        <p>Application console avec opérations mathématiques avancées.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">CLI</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon" style="background:rgba(34,197,94,0.1);">🎨</div>
+        <h3>Interface UX – App Voyage</h3>
+        <p>Maquette Figma avec wireframes et prototypage interactif.</p>
+        <div class="project-tags">
+          <span class="project-tag">Figma</span>
+          <span class="project-tag">UX Design</span>
+          <span class="project-tag">Prototypage</span>
+        </div>
+        <a href="#" class="project-link">Voir le projet<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+     
+    </div>
+  </section>
+
+ 
+  <section class="contact" id="contact">
+    <h2 class="section-title">Me <span>contacter</span></h2>
+    <div class="section-line"></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Parlons de vos idées 💬</h3>
+        <p>Vous avez un projet ou envie d'échanger ? N'hésitez pas !</p>
+         <div class="contact-item">
+          <i class="fa-solid fa-Téléphone"></i>
+          <div><strong>📱Téléphone</strong><span>688 592 608</span></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div><strong>Email</strong><span>celianthenzon@gmail.com</span></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong>Localisation</strong><span>Douala, Cameroun 🇨🇲</span></div>
+        </div>
+       
+        <div class="contact-sci">
+          <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Votre email" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" placeholder="Sujet" />
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <i class="fa-solid fa-paper-plane"></i> Envoyer le message
+        </button>
+      </form>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <p>Fait avec <span class="heart">❤️</span> par
+    <span>Nzon Célianthé Bernadette Évelyne</span>
+    &nbsp;|&nbsp; © 2025 Tous droits réservés</p>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
